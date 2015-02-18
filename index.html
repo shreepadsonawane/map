@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Mafricom</title>
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/superfish.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+	 <style type="text/css" media="screen">
+UL.tabNavigation LI {
+		    display: inline;
+		}
+	UL.tabNavigation LI A.selected,
+		UL.tabNavigation LI A:hover {
+	padding-top: 70px;
+	background:url(images/arrow-pointer.png) no-repeat center top;
+	z-index:9999;
+	position:relative; 
+	} 
+		
+		UL.tabNavigation LI A:focus {
+		white-space:nowrap;
+		
+		}
+
+		 
+		div.tabs > div h2 {
+			margin-top: 15px;
+		
+		}
+
+
+		#first {
+		    /*background-color: #fbd537;*/
+			background-image:url(images/line-3.jpg); background-repeat:repeat-x;
+		}
+
+		#second {
+		/*background-color:#00749e;*/
+		background-image:url(images/line-5.jpg); background-repeat:repeat-x; 
+		   
+		}
+
+		#third {
+		 /*background-color: #006db8;*/
+		 background-image:url(images/line-2.jpg); background-repeat:repeat-x;
+		}
+		
+		#four{
+		/*background-color:#f64e0d;*/
+		background-image:url(images/line-1.jpg); background-repeat:repeat-x; width:100%;
+		}
+
+		#five {
+		/*background-color:#00CCFF;*/
+		background-image:url(images/line-6.jpg); background-repeat:repeat-x; width:100%;
+		}
+
+		#six {
+		/*background-color:#ff8009;*/
+		background-image:url(images/line-4.jpg); background-repeat:repeat-x;
+		}
+		 
+body,td,th {
+	font-family: 'Open Sans', sans-serif;
+}
+.style2 {color: #c5b3a6}
+.style3 {font-size:18px; line-height:21px; padding-top:36px; text-align:left; color:#FFF;}
+.style4 {
+	color: #c5b3a6
+}
+.style5 {font-size: 17px; line-height:23px; color:#FFF;}
+.style10 {font-size: 24px}
+.style12 {color: #673c06}
+.style13 {padding-right: 20px; background: url(../images/arrow-3.png) right 5px no-repeat; font-size: 18px; line-height: 18px; font-family: 'Open Sans', sans-serif; font-weight: bold; margin-top: 22px; -moz-transition: all 0.4s ease; -webkit-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; display: inline-block;}
+.style14 {color: #FFFFFF; font-size:18px; padding-top:36px; line-height:21px; text-align:left;}
+.list-3{ margin:25px 0 0 0;}
+.product{ color:#ffae0d; margin:0 0 8px 0; font-size:30px; padding:0;}
+    -->
+     </style>
+	
+	
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+	
+
+    <!--<![endif]-->
+	
+	
+	<!----------<script type="text/javascript" charset="utf-8">
+		$(function () {
+			var tabContainers = $('div.tabs > div');
+			tabContainers.hide().filter(':first').show();
+			
+			$('div.tabs ul.tabNavigation a').mouseover(function () {
+				tabContainers.hide();
+				tabContainers.filter(this.hash).show();
+				$('div.tabs ul.tabNavigation a').removeClass('selected');
+				$(this).addClass('selected');
+				return false;
+			}).filter(':first').click();
+		});
+	</script>-------->
+    
+    
+    <script type="text/javascript" charset="utf-8">
+		$(function () {
+			var tabContainers = $('div.tabs > div');
+			tabContainers.hide().filter(':first').show();
+			
+			$('div.tabs ul.tabNavigation a').mouseover(function () {
+				tabContainers.hide();
+				tabContainers.filter(this.hash).show();
+				$('div.tabs ul.tabNavigation a').removeClass('selected');
+				$(this).addClass('selected');
+				return false;
+			}).filter(':first').click();
+		});
+	</script>
+
+    <script>
+        $(window).load( function(){
+            jQuery('#camera_wrap_1').camera({
+                pagination: true,
+                navigation: false,
+                height: '50%',
+                playPause: false,
+                time: 5000,
+                transPeriod: 700,
+                
+                loader: 'none',
+                minHeight:'200px',
+            });
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+     <body>
+<!--==============================header=================================-->
+<header>
+    <div class="bg-1">
+        <div class="container_16">
+            <div class="row">
+                <div class="grid_16">
+                    <h1>
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Maricom logo" width="306" height="67">                        
+                        </a>                    
+                    </h1>
+                    <nav class="clearfix">
+                        <ul class="sf-menu clearfix">
+                            <li class="current"><a href="product-intro.html">Products</a><ul>
+                               <li><a href="product-momo.html">Milk</a></li>
+                                    <li><a href="product-buttor.html">Butter</a> </li>
+                                    <li><a href="product-cheese.html">Cheese</a></li>
+                                    <li><a href="product-youghurt.html">Youghurt</a> </li>
+                                    <li><a href="product-chocolate-powder.html">Choclate Powder</a> </li>
+                                    <li><a href="product-cooking-oil.html">Cooking Oil</a> </li>
+                                    <li><a href="product-cloths.html">Clothing</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="csr.html">CSR</a></li>
+                            <li><a href="aboutus.html">About us</a>
+                            <ul>
+                                <li><a href="aboutus.html">Background Info</a></li>
+                                <li><a href="career.html">Careers</a> </li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                              </ul>
+						  </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row row-2">
+                <div class="grid_16">
+                    <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                        <div data-src="images/Milk.jpg">
+                           <div class="camera_caption fadeIn">
+                           <h6><div class="product">Milk</div>Premium quality milk that will satisfy your every need, anytime, anywhere
+</h6>
+                                <a href="#" class="circle">More</a>						  </div>
+                        </div>
+                        <div data-src="images/Butter.jpg">
+                            <div class="camera_caption fadeIn">
+							<h6><div class="product">Butter</div>One of our finest products is our rich and creamy butter that comes in 227 grams
+</h6>
+                                <a href="#" class="circle">More</a>						  </div>
+                        </div>
+                        <div data-src="images/Cheese.jpg">
+                            <div class="camera_caption fadeIn">
+								<h6><div class="product">Cheese</div>The creamiest and tastiest of cheeses that gives joy to all
+</h6>
+                                <a href="#" class="circle">More</a>
+                                </div>
+                        </div>
+                        <div data-src="images/Yoghurt.jpg">
+                            <div class="camera_caption fadeIn">
+                            <h6><div class="product">Yoghurt</div>Delicious and Nutritious (drinkable and eatable) Yoghurt for the whole family
+</h6>
+				                <a href="#" class="circle">More</a>						  </div>
+                        </div>
+                     <div data-src="images/Chocolate-drink.jpg">
+                            <div class="camera_caption fadeIn">
+	                         <h6><div class="product">Chocolate Powder</div>Our chocolate powder will tantalize your ta buds. Its readily-mixable nature results in a delicious chocolate milk that will keep the whole family happy and healthy.
+</h6>
+                             <a href="#" class="circle">More</a>					   </div>
+                      </div>
+                         <div data-src="images/Oil.jpg">
+                            <div class="camera_caption fadeIn">
+                            <h6><div class="product">Cooking Oil</div>The best oil for all your cooking needs
+</h6>
+                                <a href="#" class="circle">More</a>						  </div>
+                      </div>
+                        <div data-src="images/Clothing.jpg">
+                            <div class="camera_caption fadeIn">
+                              <h6><div class="product">Clothing</div>Group Mafricom brings in second-hand clothing from all around the world and caters to the needs of the people from across the country by providing the best quality from all over.
+</h6>
+                            <a href="#" class="circle">More</a>					   </div>
+                     </div>
+                      </div>
+					</div>
+                    
+                </div>
+            </div>
+        </div>
+    
+</header>
+
+<!--=======content================================-->
+<section class="content">
+    <div class="bg-2">
+        <div class="container_16">
+            <div class="row">
+                <div class="grid_8">
+                  <div>
+                        <h3 class="bord-1 style8">Welcome!</h3>
+<h class="style2">
+                        <div class="vspace"></div>
+                        <p class="style2 style5">
+                        Welcome to  Group Mafricom's home page! With our diverse range of products, we invite you to browse our products. Enjoy!
+                     </p>
+                     <p class="style4"><a href="product-intro.html" class="btn" style="color:#F4BE18;">More</a> </p>
+                  </div>
+                </div>
+                <div class="grid_4" style="width:217px; margin-left:37px;">
+                    <div class="box-1 ">
+                        <h3 class="bord-1 style8">Quality</h3>
+                        <div>
+                          <div align="left">
+                            <div class="vspace"></div>
+                            <p>Group Mafricom believes in only bringing the best products to the countries and the people it serves. It is pledged to the highest-quality products from all over the world and places its customers first.
+</p>
+                          </div>
+                        </div>
+						</div>
+                </div>
+                <div class="grid_4">
+                    <div class="box-1">
+                     
+                        <h3 class="bord-1 style8">Profile</h3>
+<div>
+                          <div align="left">
+                            <div class="vspace"></div>
+                            <p>Group Mafricom started in the year 1991 and have expanded to new horizons by reaching out to customer needs and are always looking for new opportunities to grow and be life long learners
+</p>
+                          </div>
+                        </div>
+						</div>
+                </div>
+            </div>
+        </div>
+  </div>
+	    <!------------------------banner with jquery----------------->
+  <div class="tabs" align="center">
+<div id="first">
+<div class="container_16">
+        <div class="row">
+                <div class="grid_5"> 
+                  
+                </div>
+                <div class="grid_7"> 
+                  <ul class="grid_3">
+                    <img src="banner/nutria.png" alt="" width="605" height="312"    align="middle" class="dropcup-wrapper3">
+                  </ul>
+                </div>
+	 
+			
+			    <div class="grid_4" style="width:306px;"> 
+			     <ul class="list-1">
+                        <p align="left" class="style14" style="color:#0f753b;">Premium quality milk powder produced in the fresh greens of Europe. The highest of quality milk due to its thickness, tastiness, and nutritious value. Try it out!</p>
+                        <div align="left"><a href="product-nutrias.html" class="btn">More</a>     
+                              </div>
+			     </ul>
+	      </div>
+        </div>
+		  </div>
+	</div>
+ <div id="second">
+<div class="container_16">
+        <div class="row">
+                <div class="grid_5"> 
+                  
+                </div>
+                <div class="grid_7"> 
+                  <ul class="grid_3">
+                    <img src="banner/momo.png" alt="" width="641" height="312"    align="middle" class="dropcup-wrapper3">
+                  </ul>
+                </div>
+	 
+			
+			    <div class="grid_4" style="width:306px;"> 
+			     <ul class="list-1">
+                        <p align="left" class="style3">Momo provides kids with a healthy lifestyle providing them with their essential components of nutrients needed for a good day at school.</p>
+                        <div align="left"><a href="product-momo.html" class="btn">More</a>     
+                              </div>
+			     </ul>
+	      </div>
+        </div>
+               
+		  </div>
+	</div>
+			
+<div id="third">
+<div class="container_16">
+        <div class="row">
+                <div class="grid_5"> 
+                  
+                </div>
+                <div class="grid_7"> 
+                  <ul class="grid_3">
+                    <img src="banner/vi1milk.png" alt="" width="605" height="312"    align="middle" class="dropcup-wrapper3">
+                  </ul>
+                </div>
+	 
+			
+			    <div class="grid_4" style="width:306px;"> 
+			     <ul class="list-1">
+                        <p align="left" class="style3">Vitmilk is nutritious and tasty, what More can one ask for? It contains the essentials for a family with its dose of minerals, vitamins and calcium which shapes up to be an ideal product</p>
+                        <div align="left"><a href="product-v1tmilk.html" class="btn">More</a>     
+                              </div>
+			     </ul>
+	      </div>
+        </div>
+               
+		  </div>
+	</div>
+				
+                
+<div id="four">
+<div class="container_16">
+        <div class="row">
+                <div class="grid_5"></div>
+                <div class="grid_7"> 
+                  <ul class="grid_3">
+                    <img src="banner/mango.png" alt="" width="605" height="312"    align="middle" class="dropcup-wrapper3">
+                  </ul>
+          </div>
+	 
+			
+			    <div class="grid_4" style="width:316px;"> 
+			     <ul class="list-1">
+                        <p align="left" class="style3">Energie, both in solid and drinkable yoghurt gives you the opportunity to satisfy both your salivary and nutritional needs with its inclusion of vitamins and  calcium</p>
+                        <div align="left"><a href="product-youghurt.html" class="btn">More</a>     
+                              </div>
+			     </ul>
+	      </div>
+        </div>
+               
+		  </div>
+	</div>
+				                		   		
+<div id="five">
+<div class="container_16">
+        <div class="row">
+                <div class="grid_5"> 
+                  
+                </div>
+                <div class="grid_7"> 
+                  <ul class="grid_3">
+                    <img src="banner/bonheur.png" alt="" width="605" height="312"    align="middle" class="dropcup-wrapper3">
+                  </ul>
+                </div>
+	 
+			
+			    <div class="grid_4" style="width:306px;"> 
+			     <ul class="list-1">
+                        <p align="left" class="style3">Vitmilk is nutritious and tasty, what More can one ask for? It contains the essentials for a family with its dose of minerals, vitamins and calcium which shapes up to be an ideal product</p>
+                        <div align="left"><a href="product-chocolate-powder.html" class="btn">More</a>     
+                              </div>
+			     </ul>
+	      </div>
+        </div>
+               
+		  </div>
+	</div>
+<div id="six">
+
+<div class="container_16">
+        <div class="row">
+                <div class="grid_5"> 
+                  
+                </div>
+                <div class="grid_7"> 
+                  <ul class="grid_3">
+                    <img src="banner/alimogirl.png" alt="" width="605" height="312"    align="middle" class="dropcup-wrapper3">
+                  </ul>
+                </div>
+			    <div class="grid_4" style="width:316px;"> 
+			     <ul class="list-1">
+                        <p align="left" class="style14" style="color:#000;">Alimo cheese and oil gives you your ultimate feasting abilities with the creaminess and tastiness of its cheese and the best of oil for your cooking needs</p>
+                        <p align="left"><a href="product-cheese.html" class="btn">More</a>                              </p>
+			     </ul>
+	      </div>
+        </div>
+               
+		  </div>
+</div>
+
+<div style="clear:both"></div>
+  <ul class="tabNavigation">
+    	
+				  <div class="list-3" align="center" >
+				  <li ><a href="#first"><img src="banner/nutriasbrand.png" alt="nutriasbrand" width="160" height="65"   > </a></li>
+			      <li><a href="#second"> <img src="banner/momobrand.png" alt="energybrand" width="173" height="56"   > </a></li>
+				<li ><a href="#third">  <img src="banner/vitmilkbrand.png" alt="vitmilkbrand" width="158" height="56"   >  </a></li>
+				 <li><a href="#four"> <img src="banner/energybrand.png" alt="energybrand" width="140" height="78"   > </a></li>
+				 <li ><a href="#five"> <img src="banner/bonheurBrand.png" alt="bonheurBrand" width="140" height="48"> </a></li>
+				<li ><a href="#six"><img src="banner/alimobrand-.png" alt="alimobrand" width="160" height="52"   ></a></li>
+    </div>
+  </ul> 	
+  </div>
+   </section>
+   <div style="margin: 0 auto; text-align:center;" class="h-line"></div>	
+   <div style="background:#CCC2BA; color: #c5b3a6;"> 
+    <div class="container_16">
+<!--=======footer=================================-->
+    <div class="container_16">
+        <div class="row">
+            <div class="prefix_1">
+                <div class="grid_4" style="margin-top:20px;">
+                <ul class="list-1 style10">
+                      <li><a href="product-cloths.html">Clothing</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+            </div>
+                <div class="grid_4" style="margin-top:20px;">
+                <ul class="list-1 style10">
+                      <li><a href="product-chocolate-powder.html">Choclate Powder</a></li>
+                        <li><a href="product-cooking-oil.html">Cooking Oil</a></li>
+                    </ul>
+            </div>
+                <div class="grid_4" style="margin-top:20px;">
+                <ul class="list-1 style10">
+                      <li><a href="product-cheese.html">Cheese</a></li>
+                        <li><a href="product-youghurt.html">Yoghurt</a></li>
+                  </ul>
+            </div>
+                <div class="grid_4" style="margin-top:20px;">
+                    <ul class="list-1 style10"><li><a href="product-momo.html">Milk</a></li>
+                        <li><a href="product-buttor.html">Butter</a></li>
+                    </ul>
+              </div>
+  </div>
+  <div class="clear"></div>
+  <div class="bord-5"></div>
+            <div class="aligncenter">
+                <ul class="soc_icons">
+                    <img src="images/soc_icons.jpg" alt="products" width="889" height="241" class="grid_16">
+                </ul>
+            </div>
+        </div>
+    </div>
+	</div>
+</div>
+    <div class="bord-3">
+        <div class="container_16">
+            <div class="row row-1">
+                <a  class="h-underline" href="#">
+                    @2013 Copyright  Group Mafricom --- Privacy Policy --- Disclaimer</a> 
+                <!--{%FOOTER_LINK} -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

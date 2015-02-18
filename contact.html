@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Mafricom</title>
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/superfish.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+	 <style type="text/css" media="screen">
+    <!--
+		UL.tabNavigation LI {
+		    display: inline;
+		}
+	/* put navigation image */
+	
+UL.tabNavigation LI A:focus {
+		white-space:nowrap;
+		}
+		div.tabs > div h2 {
+			margin-top: 15px;
+		}
+		#first {
+		    /*background-color: #fbd537;*/
+			background-image:url(images/line-3.jpg); background-repeat:repeat-x;
+		}
+
+		#second {
+		/*background-color:#00749e;*/
+		background-image:url(images/line-5.jpg); background-repeat:repeat-x; 
+		   
+		}
+
+		#third {
+		 /*background-color: #006db8;*/
+		 background-image:url(images/line-2.jpg); background-repeat:repeat-x;
+		}
+		
+		#four{
+		/*background-color:#f64e0d;*/
+		background-image:url(images/line-1.jpg); background-repeat:repeat-x; width:100%;
+		}
+
+		#five {
+		/*background-color:#00CCFF;*/
+		background-image:url(images/line-2.jpg); background-repeat:repeat-x; width:100%;
+		}
+
+		#six {
+		/*background-color:#ff8009;*/
+		background-image:url(images/line-4.jpg); background-repeat:repeat-x;
+		}
+		 
+body,td,th {
+	font-family: 'Open Sans', sans-serif;
+}
+.style2 {color: #c5b3a6; width:232px; float:left; padding-right:25px;}
+.style3 {font-size: 12px; font-size:19px; line-height:21px;}
+.style4 {
+	color: #c5b3a6
+}
+.style5 {font-size: 14px; color:#FFF;}
+.style10 {font-size: 24px}
+.style12 {color: #673c06}
+.style13 {padding-right: 20px; background: url(../images/arrow-3.png) right 5px no-repeat; font-size: 18px; line-height: 18px; font-family: 'Open Sans', sans-serif; font-weight: bold; margin-top: 22px; -moz-transition: all 0.4s ease; -webkit-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; display: inline-block;}
+.style14 {color: #FFFFFF; font-size:19px; line-height:21px;}
+.style15{color: #c5b3a6; width:69%; padding-right:25px;}
+
+.list-3{ margin:25px 0 0 0;}
+    -->
+     </style>
+	    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+	
+
+    <!--<![endif]-->
+	
+	
+	<!----------<script type="text/javascript" charset="utf-8">
+		$(function () {
+			var tabContainers = $('div.tabs > div');
+			tabContainers.hide().filter(':first').show();
+			
+			$('div.tabs ul.tabNavigation a').mouseover(function () {
+				tabContainers.hide();
+				tabContainers.filter(this.hash).show();
+				$('div.tabs ul.tabNavigation a').removeClass('selected');
+				$(this).addClass('selected');
+				return false;
+			}).filter(':first').click();
+		});
+	</script>-------->
+    
+    
+    <script type="text/javascript" charset="utf-8">
+		$(function () {
+			var tabContainers = $('div.tabs > div');
+			tabContainers.hide().filter(':first').show();
+			
+			$('div.tabs ul.tabNavigation a').mouseover(function () {
+				tabContainers.hide();
+				tabContainers.filter(this.hash).show();
+				$('div.tabs ul.tabNavigation a').removeClass('selected');
+				$(this).addClass('selected');
+				return false;
+			}).filter(':first').click();
+		});
+	</script>
+
+    <script>
+        $(window).load( function(){
+            jQuery('#camera_wrap_1').camera({
+                pagination: true,
+                navigation: false,
+                height: '50%',
+                playPause: false,
+                time: 5000,
+                transPeriod: 700,
+                
+                loader: 'none',
+                minHeight:'200px',
+            });
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<!--==============================HIGHSLIDE=================================-->
+
+<script type="text/javascript" src="lightbox/highslide/highslide-with-html.js"></script>
+<link rel="stylesheet" type="text/css" href="lightbox/highslide/highslide.css" />
+
+
+<!--
+    2) Optionally override the settings defined at the top
+    of the highslide.js file. The parameter hs.graphicsDir is important!
+-->
+
+<script type="text/javascript">
+hs.graphicsDir = 'lightbox/highslide/graphics/';
+hs.outlineType = 'rounded-white';
+hs.wrapperClassName = 'draggable-header';
+
+</script>
+     <body>
+<!--==============================header=================================-->
+<header>
+    <div class="bg-1">
+        <div class="container_16">
+            <div class="row">
+                <div class="grid_16">
+                    <h1>
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Maricom logo" width="306" height="67">                        </a>                    </h1>
+      <nav class="clearfix">
+                        <ul class="sf-menu clearfix">
+                            <li><a href="product-intro.html">Products</a><ul>
+                               <li><a href="product-momo.html">Milk</a></li>
+                                    <li><a href="product-buttor.html">Butter</a> </li>
+                                    <li><a href="product-cheese.html">Cheese</a></li>
+                                    <li><a href="product-youghurt.html">Youghurt</a> </li>
+                                    <li><a href="product-chocolate-powder.html">Choclate Powder</a> </li>
+                                    <li><a href="product-cooking-oil.html">Cooking Oil</a> </li>
+                                    <li><a href="product-cloths.html">Clothing</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="csr.html">CSR</a></li>
+                            <li><a href="aboutus.html">About us</a>
+                            <ul>
+                                <li><a href="aboutus.html">Background Info</a></li>
+                                <li><a href="career.html">Careers</a> </li>
+                                <li class="current"><a href="contact.html">Contact Us</a></li>
+                              </ul>
+						  </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--=======content================================-->
+<section class="content">
+    <div class="bg-2">
+        <div class="container_16">
+            <div class="row">
+                <div style="float:left; margin-right:22px; width:644px;">
+                   <h3 class="bord-1 style8">Stay in Touch</h3>                  
+                  <div style="width:608px;">
+					<iframe id="map_canvas" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Pointe-Noire,+Congo&amp;aq=&amp;sll=20.983588,82.752628&amp;sspn=43.155115,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Pointe-Noire,+Pointe+Noire,+Kouilou,+Congo&amp;ll=-4.77867,11.86364&amp;spn=0.022965,0.038581&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>                  
+                  <div class="clearfix">
+                    <div class="address">
+                    <dl>    
+                    <dt>DEMOCRAIC REPUBLIC OF CONGO</dt>
+                    <dd><strong>Group Mafricom sprl</strong></dd>
+                    <dd>295, Avenue Basoko</dd>
+                    <dd>Kind Gombe, Kinshasa </dd>
+                    <dd>Tel: +243-81 994 12 59  / +243-81 888 1567 / +243 81 992 9495 </dd>
+                    <dd>Fax: +243-81 261 62 63</dd>
+                    <dd>Democratic Republic of Cango</dd>
+                    <dd><span class="e-mail">E-mail: <a class="demo" href="mailto:info@mafricom.com">info@Group Mafricom.com</a></span></dd>
+                    <dd><span class="e-mail"> <a class="demo" href="mailto:mafricom@gbs.cd">Group Mafricom@gbs.cd</a></span></dd>
+                    </dl>
+                    <div><a href="Map-Kinshasa.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )" style="color:#000;">View Map</a></div>
+                    </div>
+                    <div class="address">
+                    <dl>    
+                    <dt>REPUBLIC OF CONGO</dt>
+                    <dd><strong>Group Mafricom sprl</strong></dd>
+                    <dd>93, Avenue Moe Makosso</dd>
+                    <dd>Grand Marche, Arrondissement 1
+                    Emery Patrice Lumumba, Pointe Noire
+                    Republic of Cango</dd>
+                    <dd>Tel: +242 055 648 394 / +242 069 880 181 / +242 044 720 965 </dd>
+                    <dd><span class="e-mail"> <a class="demo" href="mailto:pnmarketing@mafricom.com">pnmarketing@Group Mafricom.com</a></span></dd>
+                    </dl>
+                    <div><a href="Map-Pointe-Noire.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )" style="color:#000;">View Map</a></div>
+                    </div>
+                    
+                    <div class="address">
+                    <dl>    
+                    <dt>ANGOLA</dt>
+                    <dd><strong>Mafcomangola ComercioGeral Lda</strong></dd>
+                    <dd>Rua Sebastiao Destavez
+                    House No. 72 BC Bairo Valodia
+                    Luanda, Angola </dd>
+                    <dd>Tel: +244 222 449 194 / 222 440 748 </dd>
+                    <dd>Fax: +244 222 447 464 </dd>
+                    <dd><span class="e-mail"> <a class="demo" href="mailto:paul@mafcomangola.com">paul@mafcomangola.com</a></span></dd>
+                    </dl>
+                    <div><a href="Map-Angola.html" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )" style="color:#000;">View Map</a></div>                    
+                    </div>                    
+                </div>
+                  </div>
+              </div>
+                <div style="float:left; width:280px;">
+                <h3 class="bord-1 style8">Contact Form</h3>
+                <form id="contact-form">                     
+                <fieldset>                         
+                <label class="name">                             
+                <input type="text" value="Name:">
+                </label>                         
+                <label class="email">                             
+                <input type="email" value="E-mail:">                                             
+                </label>                         
+                <label class="phone">                             
+                <input type="tel" value="Phone:">                             
+                </label>                         
+                <label class="message">                             
+                <textarea>Message:</textarea>                             
+                </label> 
+                <div class="clear";></div>                       
+                <div class="form_buttons clearfix">                             
+                <a data-type="reset" class="btn" href="#">clear<span></span></a>                             
+                <a data-type="submit" class="btn" href="#">send<span></span></a></div>                     
+                </fieldset>                
+</form>                               
+                </div> 
+            
+        </div>
+  </div>
+  </div>  <div class="h-line-1" style="margin: 0 auto; text-align:center;"></div>
+	 <!------------------------banner with jquery----------------->
+  <div class="tabs" align="center" style="background:#FFF; margin:4px 0 5px; padding-top:0;">
+<div style="clear:both"></div>
+  <ul class="tabNavigation">
+				  <div class="list-3" align="center" >
+				  <li ><a href="product-buttor.html"><img src="banner/nutriasbrand.png" alt="nutriasbrand" width="160" height="65"></a></li>
+			      <li><a href="product-momo.html"><img src="banner/momobrand.png" alt="energybrand" width="173" height="56"></a></li>
+				<li ><a href="product-v1tmilk.html"><img src="banner/vitmilkbrand.png" alt="vitmilkbrand" width="158" height="56"></a></li>
+				 <li><a href="product-youghurt.html"><img src="banner/energybrand.png" alt="energybrand" width="140" height="78"></a></li>
+				 <li><a href="product-chocolate-powder.html"><img src="banner/bonheurBrand.png" alt="bonheurBrand" width="140" height="48"></a></li>
+				<li><a href="product-cheese.html"><img src="banner/alimobrand-.png" alt="alimobrand" width="160" height="66"></a></li>
+    </div>
+  </ul> 	
+  </div>
+   </section>
+   <div style="margin: 0 auto; text-align:center;" class="h-line"></div>	
+   <div style="background:#CCC2BA; color: #c5b3a6;"> 
+    <div class="container_16">
+<!--=======footer=================================-->
+    <div class="container_16">
+        <div class="row">
+            <div class="prefix_1">
+                <div class="grid_4" style="margin-top:20px;">
+                <ul class="list-1 style10">
+                      <li><a href="product-cloths.html">Clothing</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+            </div>
+                <div class="grid_4" style="margin-top:20px;">
+                <ul class="list-1 style10">
+                      <li><a href="product-chocolate-powder.html">Choclate Powder</a></li>
+                        <li><a href="product-cooking-oil.html">Cooking Oil</a></li>
+                    </ul>
+            </div>
+                <div class="grid_4" style="margin-top:20px;">
+                <ul class="list-1 style10">
+                      <li><a href="product-cheese.html">Cheese</a></li>
+                        <li><a href="product-youghurt.html">Yoghurt</a></li>
+                  </ul>
+            </div>
+                <div class="grid_4" style="margin-top:20px;">
+                    <ul class="list-1 style10"><li><a href="product-momo.html">Milk</a></li>
+                        <li><a href="product-buttor.html">Butter</a></li>
+                    </ul>
+              </div>
+  </div>
+  <div class="clear"></div>
+  <div class="bord-5"></div>
+            <div class="aligncenter">
+                <ul class="soc_icons">
+                    <img src="images/soc_icons.jpg" alt="products" width="889" height="241" class="grid_16">
+                </ul>
+            </div>
+        </div>
+    </div>
+	</div>
+</div>
+    <div class="bord-3">
+        <div class="container_16">
+            <div class="row row-1">
+                <a  class="h-underline" href="#">
+                    @2013 Copyright  Group Mafricom --- Privacy Policy --- Disclaimer</a> 
+                <!--{%FOOTER_LINK} -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
